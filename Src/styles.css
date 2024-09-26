@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+#main {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+
+    background-color: red;
+}
+
+.popover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    padding: 10px;
+    background-color: greenyellow;
+}
+
+.buttonWrapper {
+    position: fixed;
+    height: auto;
+
+    bottom: 10px; /* 10px of padding */
+    left: 0;
+    right: 0;
+}

@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Quiz Generator",
+    "description": "Quickly generate quizes covering content of videos you've just watched, to solidy knowledge and deepen understanding",
+    "version": "1.0",
+    "action": {
+      "default_popup": "Src/index.html",
+      "default_icon": "hello_extensions.png"
+    },
+    "permissions": [
+      "storage"
+    ]
+  }

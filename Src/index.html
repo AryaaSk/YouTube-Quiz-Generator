@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <script src="/Assets/apiKey.js"></script>
+    <script src="/.JS/openAIAPI.js"></script>
+    <script src="/.JS/quizGeneration.js"></script>
+
+    <script src="/.JS/script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <input type="text" placeholder="Transcript" id="transcriptTextfield">
+        <br>
+
+        <button id="generateQuizButton">Generate Quiz</button>
+        <br>
+
+        <u>Previous Quizzes</u>
+        <!-- Show all previous quizzes here -->
+        <div id="quizList">
+        </div>
+    </div>
+
+    <div id="quiz" class="popover" style="display: none;">
+        <h2 id="title">What is 1 + 1</h2>
+
+        <div id="choices">
+            <div class="choice">
+                A. 3
+            </div>
+            <div class="choice">
+                B. 2
+            </div>
+            <div class="choice">
+                C. 5
+            </div>
+            <div class="choice">
+                D. 7
+            </div>
+        </div>
+
+        <p id="currentlySelected">Currently Selected: A</p>
+        <br>
+        
+        <div class="buttonWrapper">
+            <button id="nextButton">Next</button>
+            <br>
+            <button id="quitQuizButton">Quit</button>
+        </div>
+    </div>
+
+    <div id="results" class="popover" style="display: none;">
+        <div id="message">
+            You got 100%
+        </div>
+
+        <div class="buttonWrapper">
+            <button id="done">Ok</button>
+        </div>
+    </div>
+</body>
+</html>
